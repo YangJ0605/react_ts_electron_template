@@ -7,6 +7,7 @@
     "start": "concurrently \"yarn start:render\" \"wait-on http://127.0.0.1:7001 && yarn start:main \"",
     "start:main": "webpack --config ./webpack/webpack.main.dev.js && electron ./dist/electron.js",
     "start:render": "webpack-dev-server --config ./webpack/webpack.render.dev.js",
+    "build": "yarn build:main && yarn build:render",
     "build:main": "webpack --config ./webpack/webpack.main.prod.js",
     "build:render": "webpack --config ./webpack/webpack.render.prod.js",
     "ele:pack": "electron-builder --dir",
