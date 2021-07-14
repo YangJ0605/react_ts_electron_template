@@ -10,8 +10,9 @@
     "build": "yarn build:main && yarn build:render",
     "build:main": "webpack --config ./webpack/webpack.main.prod.js",
     "build:render": "webpack --config ./webpack/webpack.render.prod.js",
-    "ele:pack": "electron-builder --dir",
-    "ele:dist": "electron-builder"
+    "ele:pack": "electron-builder --dir && yarn move:viz",
+    "ele:dist": "electron-builder",
+    "move:viz": "node scripts/move-viz.js"
   },
   "build": {
     "appId": "appid123456",

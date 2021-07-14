@@ -7,14 +7,7 @@ module.exports = {
     'no-undefined': 'warn',
     'no-debugger': 'off',
     complexity: ['error', { max: 99 }],
-    indent: [
-      1,
-      2,
-      {
-        SwitchCase: 1,
-        flatTernaryExpressions: true
-      }
-    ],
+    indent: 'off',
     'react/jsx-indent': [1, 2],
     'react/jsx-indent-props': [1, 2],
     'react/no-string-refs': 1, // 不要使用ref
@@ -29,6 +22,7 @@ module.exports = {
     '@typescript-eslint/no-require-imports': 'off',
     eqeqeq: [2, 'allow-null'],
     'prefer-arrow-callback': 'off',
-    '@typescript-eslint/prefer-namespace-keyword': 'off'
+    '@typescript-eslint/prefer-namespace-keyword': 'off',
+    '@typescript-eslint/indent': ['off']
   }
 }

@@ -2,8 +2,6 @@ import React, { Suspense } from 'react'
 import ReactDOM from 'react-dom'
 import { HashRouter as Router } from 'react-router-dom'
 
-import { ipcRenderer } from 'electron'
-
 import { renderRoutes } from 'react-router-config'
 import routes from './router'
 
@@ -19,14 +17,7 @@ function App() {
       <Title text='text' />
       <button
         onClick={() => {
-          ipcRenderer.send('get-root-path', '')
-          ipcRenderer.on('reply-root-path', (event, arg: string) => {
-            if (arg) {
-              console.log('应用程序路径: ', arg)
-            } else {
-              console.log('获取应用程序的路径出错')
-            }
-          })
+          console.log(1111)
         }}
       >
         打开viz

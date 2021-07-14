@@ -40,7 +40,7 @@ module.exports = {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
       '@src': path.join(__dirname, '../', 'app/renderer'),
-      '@viz': path.join(__dirname, '../', 'app/viz/index.html')
+      '@viz': path.join(__dirname, '../', 'app/viz/index1.html')
     }
   },
   module: {
@@ -82,11 +82,6 @@ module.exports = {
                 }
               }
             ]
-          },
-          {
-            test: /\.html$/,
-            use: ['file-loader'],
-            exclude: /(renderer|node_modules)/
           }
         ]
       }
