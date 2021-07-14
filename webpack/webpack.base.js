@@ -39,7 +39,8 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
     alias: {
-      '@src': path.join(__dirname, '../', 'app/renderer')
+      '@src': path.join(__dirname, '../', 'app/renderer'),
+      '@viz': path.join(__dirname, '../', 'app/viz/index.html')
     }
   },
   module: {
@@ -81,6 +82,11 @@ module.exports = {
                 }
               }
             ]
+          },
+          {
+            test: /\.html$/,
+            use: ['file-loader'],
+            exclude: /(renderer|node_modules)/
           }
         ]
       }

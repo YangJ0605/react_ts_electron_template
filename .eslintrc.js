@@ -28,6 +28,7 @@ module.exports = {
     'no-unused-vars': ['error'],
     '@typescript-eslint/no-require-imports': 'off',
     eqeqeq: [2, 'allow-null'],
-    'prefer-arrow-callback': 'off'
+    'prefer-arrow-callback': 'off',
+    '@typescript-eslint/prefer-namespace-keyword': 'off'
   }
 }

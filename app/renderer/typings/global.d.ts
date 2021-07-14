@@ -1,4 +1,7 @@
-declare module '*.jpg' {
-  const jpg: string
-  export default jpg
+import { WebviewTag } from 'electron'
+
+export declare module JSX {
+  export interface IntrinsicElements {
+    webview: WebviewTag
+  }
 }

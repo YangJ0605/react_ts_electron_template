@@ -41,9 +41,5 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "cSpell.words": [
-    "flexbox",
-    "flexbugs",
-    "webpackbar"
-  ]
+  "cSpell.words": ["flexbox", "flexbugs", "webpackbar"]
 }
